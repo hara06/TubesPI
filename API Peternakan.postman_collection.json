@@ -1,0 +1,852 @@
+{
+	"info": {
+		"_postman_id": "386c5fff-d0e3-435c-8a9c-ef4856b50e58",
+		"name": "API Peternakan",
+		"description": "Dokumentasi ini berisikan penjelasan dari penggunaan API paternakan yang ada di Indonesia. Dokumentasi ini berisikan API yang dapat digunakan untuk melihat, membuat, meng-Update, dan menghapus data dari data yang sudah apa (CRUD)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26007376"
+	},
+	"item": [
+		{
+			"name": "Tabel Peternakan",
+			"item": [
+				{
+					"name": "Data Seluruh Peternakan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/peternakan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"peternakan"
+							]
+						},
+						"description": "Menampilkan seluruh data pada tabel yang berisikan data peternakan"
+					},
+					"response": []
+				},
+				{
+					"name": "Data Peternakan Tertentu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/peternakan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"peternakan",
+								"1"
+							]
+						},
+						"description": "API ini digunakan untuk menampilkan data peternakan yang spesifik sesuai dengan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Data Peternakan",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_provinsi",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "alamat_peternakan",
+									"value": "makan",
+									"type": "text"
+								},
+								{
+									"key": "nama_peternakan",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "01294129412",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/peternakan/1/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"peternakan",
+								"1",
+								"edit"
+							]
+						},
+						"description": "API ini di gunakan untuk mengganti data pada sebuah data peternakan yang spesifik sesuai dengan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Input Data Peternakan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_provinsi",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "alamat_peternakan",
+									"value": "Jakarta",
+									"type": "text"
+								},
+								{
+									"key": "nama_peternakan",
+									"value": "Test2",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "2390420334",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/peternakan/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"peternakan",
+								""
+							]
+						},
+						"description": "API ini di gunakan untuk membuat data peternakan baru"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus 1 Data Peternakan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/peternakan/1/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"peternakan",
+								"1",
+								"delete"
+							]
+						},
+						"description": "API ini digunakan untuk menghapus sebuah data peternakan yang spesifik sesuai dengan id"
+					},
+					"response": []
+				}
+			],
+			"description": "API di bagian peternakan adalah seluruh API yang berhubungan hanya dengan data yang berada pada tabel peternakan saja"
+		},
+		{
+			"name": "Tabel Produk",
+			"item": [
+				{
+					"name": "Data Seluruh Produk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/produk",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk"
+							]
+						},
+						"description": "Menampilkan seluruh data pada tabel yang berisikan data produk"
+					},
+					"response": []
+				},
+				{
+					"name": "Data Produk Tertentu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/produk/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"1"
+							]
+						},
+						"description": "API ini digunakan untuk menampilkan data produk yang spesifik sesuai dengan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Input Data Produk",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_produk",
+									"value": "sapi_test1",
+									"type": "text"
+								},
+								{
+									"key": "jenis_produk",
+									"value": "sapi",
+									"type": "text"
+								},
+								{
+									"key": "berat_produk",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "harga_produk",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "id_peternakan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/produk",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk"
+							]
+						},
+						"description": "API ini di gunakan untuk membuat data produk baru"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Data Produk",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_hewan",
+									"value": "sapi_test",
+									"type": "text"
+								},
+								{
+									"key": "jenis_hewan",
+									"value": "sapi",
+									"type": "text"
+								},
+								{
+									"key": "berat_hewan",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "harga_hewan",
+									"value": "123445",
+									"type": "text"
+								},
+								{
+									"key": "id_peternakan",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan/1/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan",
+								"1",
+								"edit"
+							]
+						},
+						"description": "API ini di gunakan untuk mengganti data pada sebuah data peternakan yang spesifik sesuai dengan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus 1 Data Produk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/produk/5/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"produk",
+								"5",
+								"delete"
+							]
+						},
+						"description": "API ini digunakan untuk menghapus sebuah data produk yang spesifik sesuai dengan id"
+					},
+					"response": []
+				}
+			],
+			"description": "API di bagian peternakan adalah seluruh API yang berhubungan hanya dengan data yang berada pada tabel Produk saja"
+		},
+		{
+			"name": "Tabel Hewan",
+			"item": [
+				{
+					"name": "Data seluruh hewan ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan"
+							]
+						},
+						"description": "Menampilkan seluruh data pada tabel yang berisikan data hewan"
+					},
+					"response": []
+				},
+				{
+					"name": "Data Hewan Tertentu",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan",
+								"1"
+							]
+						},
+						"description": "API ini digunakan untuk menampilkan data produk yang spesifik sesuai dengan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Input Data Hewan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_hewan",
+									"value": "sapi_test1",
+									"type": "text"
+								},
+								{
+									"key": "jenis_hewan",
+									"value": "sapi",
+									"type": "text"
+								},
+								{
+									"key": "berat_hewan",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "harga_hewan",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "id_peternakan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan"
+							]
+						},
+						"description": "API ini di gunakan untuk membuat data produk baru"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Data Hewan",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama_hewan",
+									"value": "sapi_test",
+									"type": "text"
+								},
+								{
+									"key": "jenis_hewan",
+									"value": "sapi",
+									"type": "text"
+								},
+								{
+									"key": "berat_hewan",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "harga_hewan",
+									"value": "123445",
+									"type": "text"
+								},
+								{
+									"key": "id_peternakan",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan/1/edit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan",
+								"1",
+								"edit"
+							]
+						},
+						"description": "API ini di gunakan untuk mengganti data pada sebuah data produk yang spesifik sesuai dengan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus 1 Data Hewan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan/5/delete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan",
+								"5",
+								"delete"
+							]
+						},
+						"description": "API ini digunakan untuk menghapus sebuah data produk yang spesifik sesuai dengan id"
+					},
+					"response": []
+				}
+			],
+			"description": "API di bagian peternakan adalah seluruh API yang berhubungan hanya dengan data yang berada pada tabel peternakan saja"
+		},
+		{
+			"name": "Gabungan",
+			"item": [
+				{
+					"name": "Data Seluruh Hewan dan Asal Peternakan nya",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan&pet",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan&pet"
+							]
+						},
+						"description": "APi ini menampilkan semua data hewan disertai dengan asal peternakannya"
+					},
+					"response": []
+				},
+				{
+					"name": "Data Sebuah hewan dan asal Peternakannya",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hewan&pet/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hewan&pet",
+								"2"
+							]
+						},
+						"description": "APi ini menampilkan sebuah data hewan disertai dengan asal peternakannya"
+					},
+					"response": []
+				},
+				{
+					"name": "Data Hewan Dari Sebuah Peternakan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pet/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pet",
+								"2"
+							]
+						},
+						"description": "API ini menampilkan setiap data hewana dari sebuah peternakan berdasarkan id"
+					},
+					"response": []
+				},
+				{
+					"name": "Data seluruh peternakan dan asal provinsinya",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pet_pro",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pet_pro"
+							]
+						},
+						"description": "API ini menanpilkan data setiap peternakan dan asal provinsinya"
+					},
+					"response": []
+				},
+				{
+					"name": "Data peternakan dalam suatu wilayah",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pet_pro/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pet_pro",
+								"2"
+							]
+						},
+						"description": "API ini digunakan untuk menampilkan data seluruh peternakan dalam sebuah provinsi"
+					},
+					"response": []
+				},
+				{
+					"name": "Data peternakan dalam suatu wilayak berdasaarkan nama provinsinya",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pet_in_pro/sumatra barat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pet_in_pro",
+								"sumatra barat"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Diagram",
+			"item": [
+				{
+					"name": "Jumlah produkTiap Provinsi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pro_each_prov",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pro_each_prov"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hewan dalam sebuah provinsi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/all_hewan_in_pro/sumatra barat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"all_hewan_in_pro",
+								"sumatra barat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Data tiap hewan sebuah provinsi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hit_hewan_in_pro/Sumatra barat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hit_hewan_in_pro",
+								"Sumatra barat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jumlah peternakan sebuah provinsi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hit_pet_in_pro/Sumatra Barat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hit_pet_in_pro",
+								"Sumatra Barat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jumalh produk sebuah provinsi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pro_in_prov/sumatra barat",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pro_in_prov",
+								"sumatra barat"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "API pada folder ini adalah API yang di gunakan untuk membangun diagram batang sebagai visualisasi data"
+		}
+	]
+}
